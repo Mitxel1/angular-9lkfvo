@@ -6,13 +6,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 
 const routes: Routes = [
-  {path:'game/inicio', component:InicioComponent, pathMatch:'full'},
-  {path:'game/login', component:LoginComponent, pathMatch:'full'},
-  {path:'game/registrar', component:RegisterComponent, pathMatch: 'full'}
-];  
+  { path: '/inicio', component: InicioComponent, pathMatch: 'full' },
+  { path: '/login', component: LoginComponent, pathMatch: 'full' },
+  { path: '/registrar', component: RegisterComponent, pathMatch: 'full' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
