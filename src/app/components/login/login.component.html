@@ -1,9 +1,15 @@
-<div class="login">
-  <form  class="form-custom">
-    <h1>Ingresar</h1>
-    <input type="text" name="email" [(ngModel)]="email" placeholder="Email" required="required" />
-    <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required="required">
+<div class="container" onclick="onclick">
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="center">
 
-    <button type="submit" (click)="login()">Ingresar</button>
-  </form>
+    <div class="login">
+      <h1>Ingresar</h1>
+      <input type="text" name="email" [(ngModel)]="email" placeholder="Email" required="required" />
+      <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required="required">
+  
+      <button type="submit" (click)="login()">Ingresar</button>
+  </div>
+
+  </div>
 </div>
